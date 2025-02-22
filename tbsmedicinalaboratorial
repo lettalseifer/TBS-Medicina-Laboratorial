@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TBS Medicina Laboratorial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F8F9FA;
+            color: #333;
+        }
+        header {
+            background-color: #1F3A5F;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            max-width: 150px;
+            background-color: white;
+            padding: 5px;
+            border-radius: 8px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #1F3A5F;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 20px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TBS Medicina Laboratorial</h1>
+        <img src="tbs.png" alt="Logo TBS Medicina Laboratorial" class="logo">
+    </header>
+    <div class="container">
+        <h2>Sobre Nós</h2>
+        <p>Oferecemos exames laboratoriais com precisão e qualidade.</p>
+        <p><a href="certificacoes.html">Certificações</a></p>
+    </div>
+    <footer class="footer">
+        &copy; 2025 TBS Medicina Laboratorial. Todos os direitos reservados.
+    </footer>
+    <a href="https://wa.me/seunumerodetelefone" class="whatsapp" target="_blank">📱</a>
+</body>
+</html>
