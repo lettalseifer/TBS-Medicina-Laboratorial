@@ -4,43 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TBS Medicina Laboratorial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #F8F9FA;
             color: #333;
         }
         header {
-            background-color: #1F3A5F;
+            background-color: #0A1F44;
             color: white;
             padding: 20px;
             text-align: center;
-            position: relative;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         }
         .logo {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            max-width: 150px;
-            background-color: white;
-            padding: 5px;
-            border-radius: 8px;
+            display: block;
+            margin: 0 auto;
+            max-width: 180px;
+        }
+        nav {
+            background-color: #0A1F44;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background-color: #1E3A8A;
+            border-radius: 5px;
+        }
+        .banner {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            box-sizing: border-box;
+            white-space: nowrap;
+        }
+        .banner img {
+            display: inline-block;
+            width: 50%; /* Reduzindo o tamanho das imagens pela metade */
+            animation: slide 10s infinite;
+        }
+        @keyframes slide {
+            0% { transform: translateX(100%); }
+            33.33% { transform: translateX(0%); }
+            66.66% { transform: translateX(-100%); }
+            100% { transform: translateX(-200%); }
         }
         .container {
             max-width: 1200px;
             margin: auto;
+            padding: 40px;
+        }
+        .section {
+            background: white;
             padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
         .footer {
-            background-color: #1F3A5F;
+            background-color: #0A1F44;
             color: white;
             text-align: center;
-            padding: 10px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
+            padding: 15px;
         }
         .whatsapp {
             position: fixed;
@@ -50,28 +86,64 @@
             color: white;
             padding: 15px;
             border-radius: 50%;
-            font-size: 20px;
+            font-size: 24px;
             text-decoration: none;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .whatsapp:hover {
+            background-color: #1EBE5D;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>TBS Medicina Laboratorial</h1>
         <img src="tbs.png" alt="Logo TBS Medicina Laboratorial" class="logo">
+        <h1>TBS Medicina Laboratorial</h1>
     </header>
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#about">Sobre Nós</a>
+        <a href="#services">Serviços</a>
+        <a href="#certifications">Certificações</a>
+        <a href="#contact">Contato</a>
+    </nav>
+    <div class="banner">
+        <img src="banner1.png" alt="Banner 1">
+        <img src="banner2.png" alt="Banner 2">
+        <img src="banner3.jpg" alt="Banner 3">
+        <img src="banner4.png" alt="Banner 4">
+    </div>
     <div class="container">
-        <h2>Sobre Nós</h2>
-        <p>Oferecemos exames laboratoriais com precisão e qualidade.</p>
-        <p><a href="certificacoes.html">Certificações</a></p>
+        <div class="section" id="about">
+            <h2>Sobre Nós</h2>
+            <p>Somos referência em exames laboratoriais, oferecendo tecnologia de ponta e precisão em cada resultado.</p>
+        </div>
+        <div class="section" id="services">
+            <h2>Serviços</h2>
+            <ul>
+                <li>Exames Clínicos</li>
+                <li>Check-ups Empresariais</li>
+                <li>Testes Laboratoriais Avançados</li>
+            </ul>
+        </div>
+        <div class="section" id="certifications">
+            <h2>Certificações</h2>
+            <p>Conheça nossas certificações que garantem a qualidade dos nossos serviços.</p>
+        </div>
+        <div class="section" id="contact">
+            <h2>Contato</h2>
+            <p>Email: contato@tbsmedlab.com.br</p>
+            <p>Telefone: (19) 3114-7900</p>
+        </div>
     </div>
     <footer class="footer">
         &copy; 2025 TBS Medicina Laboratorial. Todos os direitos reservados.
     </footer>
-    <a href="https://wa.me/seunumerodetelefone" class="whatsapp" target="_blank">📱</a>
+    <a href="https://wa.me/11910662411" class="whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 </body>
 </html>
